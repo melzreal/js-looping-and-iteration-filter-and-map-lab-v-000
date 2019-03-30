@@ -25,17 +25,7 @@ function exactMatch(arr, obj){
 }
 
 function exactMatchToList(arr, obj){
-    const newArr = [];
-   arr.filter(function(person){
-
-    for(const key in obj){
-       if ((person[key]===obj[key]) === true){
-
-       newArr.push(person.name);
-
-      }
-    }
-    console.log(newArr);
-    return newArr;
-  });
+  const newArr = [];
+  arr.filter(person => person === obj ? newArr.push(person.name) : false );
+  return newArr;
 }
