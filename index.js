@@ -14,7 +14,7 @@ function exactMatch(arr, obj){
 
    return arr.map(function(person){
     for(const key in obj){
-     person[key]===obj[key] ? person[key] : false ;
+     const newArr = person[key]===obj[key] ? person[key] : false ;
     }
   });
 
