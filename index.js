@@ -11,11 +11,11 @@ function driverNamesWithRevenueOver(arr, value){
 }
 
 function exactMatch(arr, obj){
-  const newArr = [];
+
    return arr.map(function(person){
     for(const key in obj){
-      person[key]===obj[key] ? newArr.push(person[key]) : false ;
+    return person[key]===obj[key] ? person[key]) : false ;
     }
-  })
+  });
 
 }
