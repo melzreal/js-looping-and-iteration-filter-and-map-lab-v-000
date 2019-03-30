@@ -33,6 +33,6 @@ function exactMatchToList(arr, obj){
        newArr.push(person.name);
         console.log(newArr);
       }
-    }    return newArr;
+    }    
   });
 }
