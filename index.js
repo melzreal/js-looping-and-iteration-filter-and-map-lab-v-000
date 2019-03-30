@@ -5,7 +5,7 @@ function driversWithRevenueOver(arr, value){
 
 
 function driverNamesWithRevenueOver(arr, value){
-   const newArr = arr.map(person => person.revenue > value ? person.name : false);
+   const newArr = arr.map(person => person.revenue > value ? person.name : nil);
 
    for (const name of newArr){
      console.log(newArr[name]);
