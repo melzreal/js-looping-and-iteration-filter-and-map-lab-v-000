@@ -27,13 +27,10 @@ function exactMatch(arr, obj){
 function exactMatchToList(arr, obj){
   return arr.filter(function(person){
     let newArr = [];
-
-
     for(const key in obj){
-     if ((person[key]===obj[key]) === true){
-     console.log(person[key]);
-    }
-
-    return newArr;
+       if ((person[key]===obj[key]) === true){
+       console.log(person[key]);
+      }
+    }    return newArr;
   });
 }
