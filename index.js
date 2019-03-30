@@ -29,7 +29,7 @@ function exactMatchToList(arr, obj){
     let newArr = [];
     for(const key in obj){
        if ((person[key]===obj[key]) === true){
-       newArr.push(person[key]);
+       console.log(person[key]);
       }
     }    return newArr;
   });
