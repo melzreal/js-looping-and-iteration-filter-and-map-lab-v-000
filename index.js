@@ -10,7 +10,7 @@ function driverNamesWithRevenueOver(arr, value){
     return newArr;
 }
 
-function exactMatch(arr, obj){
+function exactMatch(arr, obj, value){
   const newArr = [];
   arr.map((rObj, value) => rObj[value] === obj ? newArr.push(rObj[value]) : false);
   console.log(newArr);
