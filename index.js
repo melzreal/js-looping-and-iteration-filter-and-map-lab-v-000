@@ -26,10 +26,10 @@ function exactMatch(arr, obj){
 
 function exactMatchToList(arr, obj){
   return arr.filter(function(person){
-    let newArr = [];
+    const newArr = [];
     for(const key in obj){
        if ((person[key]===obj[key]) === true){
-      
+
        newArr.push(person[key]);
         console.log(newArr);
       }
