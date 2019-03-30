@@ -35,6 +35,7 @@ function exactMatchToList(arr, obj){
 
       }
     }
+    console.log(newArr);
     return newArr;
   });
 }
