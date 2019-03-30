@@ -18,6 +18,7 @@ function exactMatch(arr, obj){
     for(const key in obj){
      newArr = person[key]===obj[key];
     }
+    return newArr;
   });
 
 }
