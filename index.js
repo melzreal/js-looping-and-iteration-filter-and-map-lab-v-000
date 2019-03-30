@@ -31,8 +31,8 @@ function exactMatchToList(arr, obj){
        if ((person[key]===obj[key]) === true){
 
        newArr.push(person.name);
-        console.log(newArr);
+        return newArr;
       }
-    }    
+    }
   });
 }
