@@ -30,7 +30,7 @@ function exactMatchToList(arr, obj){
 
 
     for(const key in obj){
-     newArr = person[key].name===obj[key];
+     newArr = person[key]===obj[key];
      console.log(person.name);
     }
 
