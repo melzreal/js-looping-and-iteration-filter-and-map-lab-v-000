@@ -6,7 +6,7 @@ function driversWithRevenueOver(arr, value){
 
 function driverNamesWithRevenueOver(arr, value){
    const newArr = []
-   arr.map(person => person.revenue > value ? return newArr.push(person.name) : NaN );
+   arr.map(person => person.revenue > value ? person.name : NaN );
 }
 
 function exactMatch(arr, obj){
