@@ -13,7 +13,7 @@ function driverNamesWithRevenueOver(arr, value){
 function exactMatch(arr, obj){
 
   return arr.filter(function(person){
-    const newArr = [];
+    let newArr = [];
 
     for(const key in obj){
      newArr = person[key]===obj[key];
