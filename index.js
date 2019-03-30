@@ -10,6 +10,7 @@ function driverNamesWithRevenueOver(arr, value){
    for (const name of newArr){
      console.log(newArr[name]);
    }
+   console.log(newArr);
    return newArr;
 }
 
