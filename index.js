@@ -7,7 +7,7 @@ function driversWithRevenueOver(arr, value){
 function driverNamesWithRevenueOver(arr, value){
     const newArr = []
     let names;
-    arr.filter(person => person.revenue > value ? person.name : false );
+    arr.filter(person => person.revenue > value ? names = person.name : false );
     console.log(newArr);
     return newArr;
 }
