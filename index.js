@@ -5,13 +5,21 @@ function driversWithRevenueOver(arr, value){
 
 
 function driverNamesWithRevenueOver(arr, value){
-    const newArr = []
-    arr.filter(person => person.revenue > value ? newArr.push(person.name) : false );
-    return newArr;
+  const newArr = [];
+   arr.filter(function(person){
+    for(const person in obj){
+      person[key] === obj[key] ? newArr.push(person[key]) : false ;
+    }
+  });
+   return newArr;
 }
 
-function exactMatch(arr, obj, value){
+function exactMatch(arr, obj){
   const newArr = [];
-  arr.map((rObj, value) => rObj[value] === obj[value] ? newArr.push(rObj[value]) : false);
-  console.log(newArr);
+   arr.filter(function(person){
+    for(const person in obj){
+      person[key]===obj[key] ? newArr.push(person[key]) : false ;
+    }
+  })
+   return newArr;
 }
