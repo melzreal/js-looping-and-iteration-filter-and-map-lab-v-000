@@ -9,7 +9,7 @@ function driverNamesWithRevenueOver(arr, value){
   return arr.filter(person =>
     if (person.revenue > value){
       newArr.push(person);
-    };);
+    }
 }
 
 function exactMatch(arr, obj){
