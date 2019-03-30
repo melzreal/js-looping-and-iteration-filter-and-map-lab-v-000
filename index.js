@@ -25,11 +25,13 @@ function exactMatch(arr, obj){
 }
 
 function exactMatchToList(arr, obj){
-  const newArr = [];
-  arr.forEach( (person,key) => {
-    if (person[key]===obj[key]) {
-      newArr.push(person.name)
-    } ;
-    });
- return newArr;
+  return arr.filter(function(person){
+    let newArr = [];
+
+    for(const key in obj){
+     person[key]===obj[key] ? newArr.push(person.name) : false;
+    }
+
+    return newArr;
+  });
 }
