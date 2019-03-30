@@ -5,8 +5,8 @@ function driversWithRevenueOver(arr, value){
 
 
 function driverNamesWithRevenueOver(arr, value){
-  return const newArr = arr.filter(person => person.revenue > value);
-
+   const newArr = arr.filter(person => person.revenue > value);
+   return newArr;
 }
 
 function exactMatch(arr, obj){
